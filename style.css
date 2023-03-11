@@ -1,14 +1,22 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     background-color: rgb(246, 246, 236);
 }
 
-.wraper{
-    width: 1920;
-    margin: 0 auto;
+.wraper {
+    width: 60%;
+    margin: 5% auto 0;
 }
 h1 {
     font-weight: bold;
+    margin: 0 auto;
+}
+.mem1 {
+    background-image: url(https://i.pinimg.com/originals/d5/5e/7e/d55e7ed018c995a4f50620aa029247b7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55%;
+    width: 70%;
+    margin: 0 auto;
 }
 

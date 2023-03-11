@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(246, 246, 236);
+}
+
+.wraper{
+    width: 1920;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: bold;
+}
+

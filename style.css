@@ -7,11 +7,28 @@
     width: 60%;
     margin: 5% auto 0;
 }
+.wraper:hover{
+    cursor: pointer;
+}
+.wraper:hover .image{
+    display: block;
+}
 h1 {
     font-weight: bold;
     margin: 0 auto;
 }
-.mem1 {
+.image{
+    width: 3%;
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.pic1 {
     background-image: url(https://i.pinimg.com/originals/d5/5e/7e/d55e7ed018c995a4f50620aa029247b7.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,4 +36,11 @@ h1 {
     width: 70%;
     margin: 0 auto;
 }
-
+.mem2:hover .pic2{
+    background-image: url(https://www.meme-arsenal.com/memes/dba8a7a74cf93471ceac3a8764c66da8.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55%;
+    width: 70%;
+    margin: 0 auto;
+}

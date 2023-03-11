@@ -6,41 +6,191 @@
 .wraper {
     width: 60%;
     margin: 5% auto 0;
+    transition: 1s;
 }
+
 .wraper:hover{
     cursor: pointer;
+    transition: 1s;
+}
+
+.wraper:hover a{
+    color: black;
+
 }
 .wraper:hover .image{
     display: block;
+    opacity: 1;
+    transition: 1s;
 }
+
 h1 {
     font-weight: bold;
     margin: 0 auto;
 }
+
 .image{
     width: 3%;
-    display: none;
+    transition: 1s;
+    opacity: 0;
 }
+
 a{
     text-decoration: none;
+    color: blue;
+    transition: 1s;
 }
+
+.mem{
+    transition: 1s;
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
 }
-.pic1 {
+
+.mem1 .pic1 {
     background-image: url(https://i.pinimg.com/originals/d5/5e/7e/d55e7ed018c995a4f50620aa029247b7.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 55%;
-    width: 70%;
     margin: 0 auto;
 }
+
+.active{
+    height: 70%;
+    width: 60%;
+}
+
+
+.mem2 .pic2{
+    background-image: url(https://www.meme-arsenal.com/memes/dba8a7a74cf93471ceac3a8764c66da8.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0%;
+    width: 0%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
 .mem2:hover .pic2{
     background-image: url(https://www.meme-arsenal.com/memes/dba8a7a74cf93471ceac3a8764c66da8.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 55%;
-    width: 70%;
+    height: 70%;
+    width: 55%;
     margin: 0 auto;
+    transition: 2s;
+}
+
+.mem2:hover .x2{
+    display: block;
+    
+}
+.mem2:hover .plus{
+    display: none;
+    
+}
+.x2{
+    display: none;
+    width: 3%;
+    transition: 1s;
+}
+
+.mem2:active .h-sec{
+    color: blue;
+}
+
+.mem3 .pic3{
+    background-image: url(https://cs10.pikabu.ru/post_img/big/2018/11/12/9/1542035135118725900.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0%;
+    width: 0%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.mem3:hover .pic3{
+    background-image: url(https://cs10.pikabu.ru/post_img/big/2018/11/12/9/1542035135118725900.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 55%;
+    margin: 0 auto;
+    transition: 2s;
+}
+
+.mem3:hover .x3{
+    display: block;
+    
+}
+.mem3:hover .plus{
+    display: none;
+    
+}
+.x3{
+    display: none;
+    width: 3%;
+    transition: 1s;
+}
+
+.mem3:active .h-sec{
+    color: blue;
+}
+
+.mem4 .pic4{
+    background-image: url(https://pbs.twimg.com/media/EIsGlhMWwAIQUFk.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0%;
+    width: 0%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.mem4:hover .pic4{
+    background-image: url(https://pbs.twimg.com/media/EIsGlhMWwAIQUFk.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 55%;
+    margin: 0 auto;
+    transition: 2s;
+}
+
+.mem4:hover .x4{
+    display: block;
+    
+}
+.mem4:hover .plus{
+    display: none;
+    
+}
+.x4{
+    display: none;
+    width: 3%;
+    transition: 1s;
+}
+
+.mem4:active .h-sec{
+    color: blue;
+}
+
+@media(max-width: 320px) {
+.wraper {
+    width: 90%
+}
+.pic1{
+    height: 30%;
+    width: 85%;
+}
+.pic2{
+    height: 35%;
+    width: 83%;
+}
+.mem2:hover .pic2{
+    height: 35%;
+    width: 83%;
+}
 }

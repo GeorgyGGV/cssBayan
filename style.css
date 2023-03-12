@@ -6,34 +6,33 @@
 .wraper {
     width: 60%;
     margin: 5% auto 0;
-    transition: 1s;
+    transition: 0.5s;
+    color: blue;
 }
 @media (min-width: 821px) {
 .wraper:hover{
     cursor: pointer;
-    transition: 1s;
-}}
-@media (min-width: 821px) {
-.wraper:hover a{
+    transition: 0.5s;
     color: black;
-
 }}
+
 @media (min-width: 821px) {
 .wraper:hover .image{
     display: block;
     opacity: 1;
-    transition: 1s;
+    transition: 0.5s;
 }}
 
 h1 {
     font-weight: bold;
     margin: 0 auto;
     font-size: 6em;
+    color: black;
 }
 
 .image{
     width: 3%;
-    transition: 1s;
+    transition: 0.5s;
     opacity: 0;
 }
 
@@ -57,6 +56,7 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
+    transition: 1s;
 }
 
 @media (min-width: 821px) {
@@ -70,26 +70,126 @@ a{
     transition: 2s;
 }}
 
-.active{
+#mem1{
+    display: none;
+}
+
+input[type="radio"]#mem1:checked + label > .pic1{
     height: 70%;
     width: 45%;
 }
 
 .x1{
-    display: none;
     width: 3%;
+    opacity: 0;
     transition: 1s;
+    display: none;
+    
+}
+
+@media (min-width: 821px) {
+.wraper:hover #mem1:checked ~ label .x1 {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2s;
+}}
+
+@media (min-width: 821px) {
+.wraper:hover #mem1:checked ~ label .x1 {
+    visibility: visible;
+    opacity: 1;
+}}
+
+#mem1:checked + label h4 {
+    color: black;
+}
+#mem1:checked + label .image{
+    display: none;
+}
+
+@media (min-width: 821px) {
+.wraper:hover #mem2:checked ~ label .x2 {
+    opacity: 1;
+    transition: 1s;
+    display: block;
+}}
+
+#mem2:checked + label h4 {
+    color: black;
+}
+
+#mem2:checked + label .image{
+    display: none;
+}
+
+#mem2{
+    display: none;
+}
+
+input[type="radio"]#mem2:checked + label > .pic2{
+    height: 70%;
+    width: 45%;
+}
+
+#mem3{
+    display: none;
+}
+
+@media (min-width: 821px) {
+.wraper:hover #mem3:checked ~ label .x3 {
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}}
+
+#mem3:checked + label h4 {
+    color: black;
+}
+
+#mem3:checked + label .image{
+    display: none;
+}
+
+input[type="radio"]#mem3:checked + label > .pic3{
+    height: 70%;
+    width: 45%;
+}
+
+#mem4{
+    display: none;
+}
+
+
+@media (min-width: 821px) {
+.wraper:hover #mem4:checked ~ label .x4 {
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}}
+
+#mem4:checked + label h4 {
+    color: black;
+}
+
+#mem4:checked + label .image{
+    display: none;
+}
+
+input[type="radio"]#mem4:checked + label > .pic4{
+    height: 70%;
+    width: 45%;
 }
 
 .mem1:active .h-sec{
     color: blue;
 }
-
 @media (min-width: 821px) {
-.mem1:hover .x1{
-    display: block;
-    
-}}
+    .mem1:hover .x1{
+        display: block;
+        opacity: 1;
+        transition: 1s;
+    }}
 
 @media (min-width: 821px) {
 .mem1:hover .plus{
@@ -122,9 +222,11 @@ a{
 }}
 
 @media (min-width: 821px) {
-.mem2:hover .x2{
-    display: block;
-}}
+    .mem2:hover .x2{
+        display: block;
+        opacity: 1;
+        transition: 1s;
+    }}
 
 @media (min-width: 821px) {
 .mem2:hover .plus{
@@ -132,9 +234,10 @@ a{
 }}
 
 .x2{
+    opacity: 0;
+    transition: 1s;
     display: none;
     width: 3%;
-    transition: 1s;
 }
 
 .mem2:active .h-sec{
@@ -161,9 +264,11 @@ a{
 }}
 
 @media (min-width: 821px) {
-.mem3:hover .x3{
-    display: block;
-}}
+    .mem3:hover .x3{
+        display: block;
+        opacity: 1;
+        transition: 1s;
+    }}
 
 @media (min-width: 821px) {
 .mem3:hover .plus{
@@ -200,9 +305,11 @@ a{
 }}
 
 @media (min-width: 821px) {
-.mem4:hover .x4{
-    display: block;
-}}
+    .mem4:hover .x4{
+        display: block;
+        opacity: 1;
+        transition: 1s;
+    }}
 
 @media (min-width: 821px) {
 .mem4:hover .plus{
@@ -225,8 +332,23 @@ h4 {
 .wraper {
     width: 90%
 }
-    
-.active{
+
+input[type="radio"]#mem1:checked + label > .pic1 {
+    height: 58%;
+    width: 70%;
+}
+
+input[type="radio"]#mem2:checked + label > .pic2 {
+    height: 58%;
+    width: 70%;
+}
+
+input[type="radio"]#mem3:checked + label > .pic3 {
+    height: 58%;
+    width: 70%;
+}
+
+input[type="radio"]#mem4:checked + label > .pic4 {
     height: 58%;
     width: 70%;
 }
@@ -245,10 +367,26 @@ h4 {
     width: 90%
 }
 
-.active{
+input[type="radio"]#mem1:checked + label > .pic1 {
     height: 28%;
     width: 83%;
 }
+
+input[type="radio"]#mem2:checked + label > .pic2 {
+    height: 28%;
+    width: 83%;
+}
+
+input[type="radio"]#mem3:checked + label > .pic3 {
+    height: 28%;
+    width: 83%;
+}
+
+input[type="radio"]#mem4:checked + label > .pic4 {
+    height: 28%;
+    width: 83%;
+}
+
 h1 {
     font-size: 3em;
 }
